@@ -180,7 +180,6 @@ export class UiSwitchComponent implements ControlValueAccessor, OnDestroy {
       this.checked = !!obj;
     }
 
-    this.onChangeCallback(this.checked);
     if (this.cdr) {
       this.cdr.markForCheck();
     }
